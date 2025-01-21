@@ -44,7 +44,7 @@ resource "aws_security_group" "TG01-SG01-nvirginia" {
   }
 
   tags = {
-    Name    = "TG01-SG01-nvirginia"
+    Name = "TG01-SG01-nvirginia"
   }
 
 }
@@ -82,7 +82,7 @@ resource "aws_security_group" "LB01-SG01-nvirginia" {
   }
 
   tags = {
-    Name    = "LB01-SG01-nvirginia"
+    Name = "LB01-SG01-nvirginia"
   }
 
 }

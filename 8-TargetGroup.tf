@@ -1,8 +1,8 @@
 resource "aws_lb_target_group" "nvirginia_tg" {
-  name     = "nvirginia-target-group"
-  port     = 80
-  protocol = "HTTP"
-  vpc_id   = aws_vpc.nvirginiavpc.id
+  name        = "nvirginia-target-group"
+  port        = 80
+  protocol    = "HTTP"
+  vpc_id      = aws_vpc.nvirginiavpc.id
   target_type = "instance"
 
   health_check {
@@ -17,7 +17,7 @@ resource "aws_lb_target_group" "nvirginia_tg" {
   }
 
   tags = {
-    Name    = "nvirginiaTargetGroup"
+    Name = "nvirginiaTargetGroup"
   }
 }
 

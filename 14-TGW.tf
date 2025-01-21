@@ -1,8 +1,8 @@
 resource "aws_ec2_transit_gateway" "nvirginia_TGW" {
-    description = "nvirginia_TGW"
-    tags = {
-      Name = "nvirginia_TGW"
-    }
+  description = "nvirginia_TGW"
+  tags = {
+    Name = "nvirginia_TGW"
+  }
 }
 
 #Transit Gateway Attachment to Tokyo VPC

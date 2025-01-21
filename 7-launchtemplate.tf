@@ -1,6 +1,6 @@
 resource "aws_launch_template" "nvirginia_LT" {
   name_prefix   = "nvirginia_LT"
-  image_id      = "ami-01816d07b1128cd2d"  
+  image_id      = "ami-01816d07b1128cd2d"
   instance_type = "t2.micro"
 
   key_name = "NVirginiaLinux"
@@ -57,7 +57,7 @@ resource "aws_launch_template" "nvirginia_LT" {
   tag_specifications {
     resource_type = "instance"
     tags = {
-      Name    = "nvirginia_LT"
+      Name = "nvirginia_LT"
     }
   }
 
